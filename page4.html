@@ -28,14 +28,14 @@
         <h1>My Fourth Heading</h1>
         <p>My fourth paragraph</p>
         <!--<img src="images/central_park.jpg" alt=Central Park" width="500"/>-->
-      <ul id="album">
-        <li id="photo"><img src="imagesWeek3/winterland1.jpg"></li>
+        <ul id="album">
+          <!--<li id="photo"><img src="imagesWeek3/winterland1.jpg"></li>
         <li id="photo"><img src="imagesWeek3/winterland2.jpg"></li>
         <li id="photo"><img src="imagesWeek3/winterland3.jpg"></li>
         <li id="photo"><img src="imagesWeek3/winterland4.jpg"></li>
         <li id="photo"><img src="imagesWeek3/winterland5.jpg"></li>
-        <li id="photo"><img src="imagesWeek3/winterland6.jpg"></li>
-      </ul>
+        <li id="photo"><img src="imagesWeek3/winterland6.jpg"></li>-->
+        </ul>
       </main>
       <!-- End Main Content -->
       <!-- Footer Information-->
@@ -43,5 +43,23 @@
       <footer>&copy; Copyright 2022</footer>
     </div>
     <!-- End Container -->
+    <script>
+      var photos = []; //empty array to store image element
+      var fileNames = []; //empty array to store image filenames
+      var imageList = []; //to store html list that conatains images
+      var image; // empty variable to store assembled image list codes
+      var openList = "<li id='photo'>";
+      var closeList = "</li>"; //close list tag for image
+
+      //Create a loop to create 6 images starting with the index of 0
+      for (var i=0; i<6; i++) {
+        fileNames.push("winterland"+(i+1)); //create image file
+        photos.push("<img src='imagesWeek3/"+fileNames[i]+".jpg'>")
+        image = openList + photos[i] + closeList;
+        imageList.push(image);
+      }
+      //Display all six image codes stored in the array
+      document.getElementById("album").innerHTML = imageList.join(" ");
+    </script>
   </body>
 </html>
