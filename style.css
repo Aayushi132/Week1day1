@@ -95,3 +95,137 @@ input[type="inquire"] {
   margin: 20px 0 10px 0;
   width: 100px;
 }
+main #album #photo img {
+  width: 400px;
+}
+
+section {
+  width: 100%;
+  background-color: #4288c3;
+}
+
+section #album {
+  width: 1200px;
+  padding: 3em 0 2em 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section #partners .photo {
+  display: inline-block;
+  margin: 0 0.75em;
+  padding: 1.3em 1.5em;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.imageBox {
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+
+.photo {
+  opacity: 1;
+  display: block;
+  width: 400px;
+  height: 350px;
+  margin: 20px 50px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  padding: 1em 0;
+}
+
+.middle {
+  transition: 0.5s ease;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imageBox:hover .middle {
+  visibility: visible;
+}
+
+#text {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+figcaption {
+ width: 100%;
+}
+
+#gallery .row {
+  display: inline-flex;
+  margin-left: 7em;
+}
+
+/*Modal*/
+#modal1 {
+  visibility: hidden;
+  position: absolute;
+    width: 350px;
+    z-index: 1;
+    height: 235px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-top: -250px;
+    margin-left: 310px;
+}
+
+/*Footer*/
+footer {
+  width: 100%;
+  height: 155px;
+  padding-bottom: 1em;
+  background-color: #c21111;
+}
+footer #nondisclaimer .copy {
+  padding: 3.5em 3.5em 3.5em 13em;
+  float: left;
+  font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+  padding: 2.5em;
+  margin-right: 9.25em;
+  float: right;
+}
+footer #disclaimer {
+  clear: both;
+}
+footer #disclaimer p {
+  font-size: 0.85em;
+  text-align: center;
+}
+footer #nondisclaimer .social .fa {
+  padding: 15px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+  opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+footer #nondisclaimer .social .fa-twitter {
+  background: #55acee;
+  color: white;
+}
+footer #nondisclaimer .social .fa-instagram {
+  background: #125688;
+  color: white;
+}

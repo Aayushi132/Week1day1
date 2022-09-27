@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    
+  <head>
+    <meta charset="UTF-8" />
+
     <title>My Third Web Page</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
     <!-- Container to wrap everything -->
     <div id="container">
-        <!-- Brand of Website -->
-        <header>My Web Site Brand</header>
-        <!-- Main Navigation -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></a></li>
-                <li><a href="page2.html">About</a></li>
-                <li>Gallery</li>
-                <li><a href="page3.html">Contact</a></li>
-            </ul>
-        </nav> <!-- End Main Navigation -->
-        
-        <!-- Main Content -->
-        <main>
+      <!-- Brand of Website -->
+      <header>My Web Site Brand</header>
+      <!-- Main Navigation -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="page2.html">About</a></li>
+          <li><a href="page4.html">Gallery</a></li>
+          <li><a href="page3.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- End Main Navigation -->
+
+      <!-- Main Content -->
+      <main>
         <h1>My Third Heading</h1>
         <p>My third paragraph</p>
-        <img src="images/central_park.jpg" alt="Central Park" width="500"/>
-    
+        <img src="images/central_park.jpg" alt="Central Park" width="500" />
+
         <form action="/signup" method="post">
-            <fieldset>
-                <legend>User Personal Information</legend>
+          <fieldset>
+            <legend>User Personal Information</legend>
 
-                <label>Enter your full name</label>
-                <input type="text" name="name" />
-                <label>Enter your email</label>
-                <input type="email" name="email" />
-                <label>Enter your phone</label>
-                <input type="text" name="phone" />
-                
-                <label>Select your gender</label>
-                <input type="radio" name="gender" value="male"/>Male
-                <input type="radio" name="gender" value=""/>Female 
-                <label>How should we contact you?</label>
+            <label>Enter your full name</label>
+            <input type="text" name="name" />
+            <label>Enter your email</label>
+            <input type="email" name="email" />
+            <label>Enter your phone</label>
+            <input type="text" name="phone" />
+
+            <label>Select your gender</label>
+            <input type="radio" name="gender" value="male" />Male
+            <input type="radio" name="gender" value="" />Female
+            <label>How should we contact you?</label>
             <input type="radio" name="contact" value="email" />Email
-            <input type="radio" name="contact" value="phone" />Phone 
-                <label>How did you hear about us?</label>
+            <input type="radio" name="contact" value="phone" />Phone
+            <label>How did you hear about us?</label>
             <textarea cols="30" rows="2"></textarea>
-            <label><button type="inquire" value="inquire">Inquire</button></label>
-            </fieldset>
+            <label
+              ><button type="inquire" value="inquire">Inquire</button></label
+            >
+          </fieldset>
         </form>
+      </main>
+      <!-- End Main Content -->
+      <!-- Footer Information-->
 
-    </main>
-    <!-- End Main Content -->
-    <!-- Footer Information-->
-
-    <footer>&copy; Copyright 2022</footer>
-    </div> <!-- End Container -->
-</body>
+      <footer>&copy; Copyright 2022</footer>
+    </div>
+    <!-- End Container -->
+  </body>
 </html>
