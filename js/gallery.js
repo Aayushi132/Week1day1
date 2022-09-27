@@ -26,7 +26,7 @@ const descriptionArray = [
 const modalDesc = [
   "The trees get covered with snow on a peak winter day.",
   "The park is hard to maintain on snowy days and the leaves turn brown and dull.",
-  "The snow takes over the bridge. It look beautiful but wear correct shoes!",
+  "The snow takes over the bridge. It looks beautiful but remember to wear the right shoes!",
   "You can go hiking on these trails if you have the right equipment. Contact our center to give you a checklist!",
   "You can visit the shops to have fun Christmas shopping with and for your friends and family. We keep all kinds of candies and goodies",
   "Our cabins are equipped with everything you need on a cold winter night. You can enjoy these views as you make yourself comfortable in our cabins",

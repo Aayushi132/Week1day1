@@ -194,6 +194,16 @@ figcaption {
 
 }
 
+#headingModal, #bodyModal {
+  margin: 1em;
+}
+
+#closeInfo {
+  text-align: center;
+  color: yellow;
+  padding: 2em;
+}
+
 /*Footer*/
 footer {
   width: 100%;
