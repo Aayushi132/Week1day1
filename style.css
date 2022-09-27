@@ -78,7 +78,7 @@ caption {
   color: #753a30;
 }
 
-/* Page 3 */
+/* Form */
 label {
   display: block;
   margin: 15px 0 0 0;
@@ -95,6 +95,15 @@ input[type="inquire"] {
   margin: 20px 0 10px 0;
   width: 100px;
 }
+
+#email, #phone {
+  display: none;
+}
+
+#email input[type="email"], #phone input[type="phone"], #fullName {
+  width: 253px;
+}
+
 main #album #photo img {
   width: 400px;
 }
@@ -168,17 +177,21 @@ figcaption {
 }
 
 /*Modal*/
-#modal1 {
+#modal {
   visibility: hidden;
-  position: absolute;
+  position: fixed;
     width: 350px;
     z-index: 1;
     height: 235px;
     background-color: black;
+    opacity: 0.9;
     color: white;
     border-radius: 20px;
-    margin-top: -250px;
-    margin-left: 310px;
+    left: 45%;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+
 }
 
 /*Footer*/

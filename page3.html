@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
 
     <title>My Third Web Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
     <!-- Container to wrap everything -->
     <div id="container">
       <!-- Brand of Website -->
-      <header>My Web Site Brand</header>
+      <header style="font-size: 60px; color: #fff">My Web Site Brand</header>
       <!-- Main Navigation -->
       <nav>
         <ul>
@@ -24,27 +28,33 @@
 
       <!-- Main Content -->
       <main>
-        <h1>My Third Heading</h1>
-        <p>My third paragraph</p>
-        <img src="images/central_park.jpg" alt="Central Park" width="500" />
-
         <form action="/signup" method="post">
           <fieldset>
             <legend>User Personal Information</legend>
 
             <label>Enter your full name</label>
-            <input type="text" name="name" />
-            <label>Enter your email</label>
-            <input type="email" name="email" />
-            <label>Enter your phone</label>
-            <input type="text" name="phone" />
+            <input id="fullName" type="text" name="name" />
 
             <label>Select your gender</label>
             <input type="radio" name="gender" value="male" />Male
             <input type="radio" name="gender" value="" />Female
+
             <label>How should we contact you?</label>
-            <input type="radio" name="contact" value="email" />Email
-            <input type="radio" name="contact" value="phone" />Phone
+            <select name="contact" id="contact" onchange="onSelect()">
+              <option value="select" selected>Select one</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+            </select>
+
+            <div id="email">
+              <label>Enter your email</label>
+              <input type="email" name="email" />
+            </div>
+            <div id="phone">
+              <label>Enter your phone</label>
+              <input type="phone" name="phone" />
+            </div>
+
             <label>How did you hear about us?</label>
             <textarea cols="30" rows="2"></textarea>
             <label
@@ -56,8 +66,28 @@
       <!-- End Main Content -->
       <!-- Footer Information-->
 
-      <footer>&copy; Copyright 2022</footer>
+      <footer>
+        <div id="nondisclaimer">
+          <div class="copy">&copy; Copyright 2022 :: WinterWonderland.com</div>
+          <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+
+          <div id="disclaimer">
+            <p>
+              This website is designed and created solely for educational
+              purposes only at Westcliff University. All contents are not
+              intended for any commercial gain or use.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- End Container -->
+    <script src="js/contact.js">
+
+    </script>
   </body>
 </html>

@@ -84,18 +84,13 @@ var closeInfo = document.getElementById("closeInfo");
 closeInfo.addEventListener("click", hideInfo);
 
 function hideInfo() {
-  document.getElementById("modal1").style.visibility = "hidden";
+  document.getElementById("modal").style.visibility = "hidden";
 }
 
 function openModal(param) {
-  document.getElementById("modal1").style.visibility = "visible";
+  document.getElementById("modal").style.visibility = "visible";
   document.getElementById("headingModal").innerHTML = captionArray[param];
   document.getElementById("bodyModal").innerHTML = modalDesc[param];
   document.getElementById("closeInfo").innerHTML = closeInfoText;
 }
 
-// function showInfo(box) {
-//   document.getElementById("modal1").style.visibility = "visible";
-//   document.getElementById("headingModal").innerHTML = captionArray[box];
-//   document.getElementById("bodyModal").innerHTML = descriptionArray[box];
-// }
