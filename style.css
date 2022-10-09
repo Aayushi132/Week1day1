@@ -43,6 +43,34 @@ main h1 {
   color: rgb(129, 141, 179);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.row {
+  display: flex;
+  margin: inherit;
+}
+
+.column {
+  width: 50%;
+}
+
+main img {
+  max-width: 70%;
+}
+
+@media (max-width: 600px) {
+  .row {
+    display: initial;
+    margin: inherit;
+  }
+  .column {
+    width: 100%;
+    margin: inherit;
+  }
+  main img {
+    width: 100%;
+  }
+}
+
 footer {
   height: 40px;
   background-color: rgb(129, 141, 179);
@@ -96,11 +124,14 @@ input[type="inquire"] {
   width: 100px;
 }
 
-#email, #phone {
+#email,
+#phone {
   display: none;
 }
 
-#email input[type="email"], #phone input[type="phone"], #fullName {
+#email input[type="email"],
+#phone input[type="phone"],
+#fullName {
   width: 253px;
 }
 
@@ -168,7 +199,7 @@ section #partners .photo {
 }
 
 figcaption {
- width: 100%;
+  width: 100%;
 }
 
 #gallery .row {
@@ -180,21 +211,21 @@ figcaption {
 #modal {
   visibility: hidden;
   position: fixed;
-    width: 350px;
-    z-index: 1;
-    height: 235px;
-    background-color: black;
-    opacity: 0.9;
-    color: white;
-    border-radius: 20px;
-    left: 45%;
-    top: 50%;
-    margin-top: -100px;
-    margin-left: -100px;
-
+  width: 350px;
+  z-index: 1;
+  height: 235px;
+  background-color: black;
+  opacity: 0.9;
+  color: white;
+  border-radius: 20px;
+  left: 45%;
+  top: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
 }
 
-#headingModal, #bodyModal {
+#headingModal,
+#bodyModal {
   margin: 1em;
 }
 
@@ -205,12 +236,12 @@ figcaption {
 }
 
 /*Footer*/
-footer {
+/* footer {
   width: 100%;
   height: 155px;
   padding-bottom: 1em;
   background-color: #c21111;
-}
+} */
 footer #nondisclaimer .copy {
   padding: 3.5em 3.5em 3.5em 13em;
   float: left;
